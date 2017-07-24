@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "module": "es2015",
+    "target": "es2017",
+    "baseUrl": "./",
+    "paths": {
+      "@app/": "./src/app.js",
+      "@store/": ["./src/store/*"],
+      "@styles/": ["./src/assets/styles/*"],
+      "@images/": ["./src/assets/images/*"],
+      "@components/": ["./src/components/*"]
+    }
+  },
+  "files": [
+    "./src/**/*"
+  ]
+}
