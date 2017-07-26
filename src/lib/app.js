@@ -7,7 +7,7 @@ const app = initializeApp({
   authDomain: 'nobacon-227bb.firebaseapp.com',
   databaseURL: 'https://nobacon-227bb.firebaseio.com',
   projectId: 'nobacon-227bb',
-  storageBucket: '',
+  storageBucket: 'nobacon-227bb.appspot.com',
   messagingSenderId: '605173431243'
 })
 

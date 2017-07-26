@@ -9,7 +9,15 @@
           title="NoBacon Store" />
       </router-link>
 
-      <ui-button @click.native="logout">Sair</ui-button>
+      <nav class="view-header-menu">
+        <ul class="list">
+          <router-link to="/products" tag="li" class="item">
+            <a class="link">Produtos</a>
+          </router-link>
+        </ul>
+      </nav>
+
+      <ui-button class="view-header-item" @click.native="logout()">Sair</ui-button>
     </div>
   </header>
 </template>
@@ -38,13 +46,20 @@
     box-shadow: 0 0 10px rgba(#000, .25)
 
   .view-header-content
+    display: flex
+    flex-direction: row
+    align-items: center
     width: 100%
     height: 100%
 
     @media screen and (min-width: 1280px)
       width: 1280px
 
+    & > .view-header-item
+      margin-left: auto
+
   .view-header-logo
+    display: block
     height: 100%;
 
     & > .image

@@ -2,6 +2,7 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import Login from '@containers/Login'
 import Home from '@containers/Home'
+import Products from '@containers/Products'
 import * as types from '@store/types'
 import store from '@store'
 
@@ -18,6 +19,10 @@ const router = new Router({
     {
       path: '/login',
       component: Login
+    },
+    {
+      path: '/products',
+      component: Products
     }
   ]
 })

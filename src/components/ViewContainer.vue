@@ -38,15 +38,17 @@
     > .view-content
       position: relative
       overflow: auto
-      display: flex
-      justify-content: flex-start
-      align-items: center
-      flex-direction: column
+      width: 100%
       min-height: 100%
 
       @media screen and (min-width: 768px)
         height: 100%
         min-height: auto
+
+      @media screen and (min-width: 1280px)
+        width: 1280px
+        margin-right: auto
+        margin-left: @margin-right
 
     > .view-header ~ .view-content
       min-height: 'calc(100% - %s)' % view-header.height
